@@ -5,11 +5,9 @@ namespace App\Http\Livewire;
 use App\Models\Page;
 use Illuminate\Validation\Rule;
 use Livewire\Component;
-use Livewire\WithPagination;
 
 class Pages extends Component
 {
-    use WithPagination;
     public $modalFormVisible = false;
     public $modalConfirmDeleteVisible = false;
     public $modelId;
@@ -55,7 +53,6 @@ class Pages extends Component
     {
         Page::destroy($this->modelId);
         $this->modalConfirmDeleteVisible = false;
-        $this->resetPage();
     }
     
     public function createShowModal()
