@@ -28,11 +28,7 @@
     
             <div class="boxed">
     
-                @include('structure.content_nifty')
-
-                @include('structure.aside_nifty')
-    
-                @include('structure.main_navigation_nifty')
+                @yield('content')
     
             </div>
     
