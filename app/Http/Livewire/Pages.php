@@ -26,7 +26,7 @@ class Pages extends Component
 
     public function updatedTitle($value)
     {
-        $this->generateSlug($value);
+        $this->slug = str_replace(' ', '-', strtolower($value));
     }
     
     public function create()
@@ -101,11 +101,6 @@ class Pages extends Component
         $this->title = null;
         $this->slug = null;
         $this->content = null;
-    }
-
-    public function generateSlug($value)
-    {
-        $this->slug = str_replace(' ', '-', strtolower($value));
     }
 
     public function render()
