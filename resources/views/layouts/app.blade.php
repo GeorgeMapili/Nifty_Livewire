@@ -25,7 +25,7 @@
     
             <div class="boxed">
     
-                {{-- @yield('content') --}}
+                @yield('content')
                 
             </div>
     
