@@ -25,8 +25,8 @@
     
             <div class="boxed">
     
-                @yield('content')
-    
+                {{-- @yield('content') --}}
+                
             </div>
     
             @include('structure.footer')
