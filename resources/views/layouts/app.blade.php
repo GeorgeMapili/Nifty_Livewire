@@ -16,11 +16,8 @@
         @trixassets
         @livewireStyles
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="{{ mix('js/main.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
+    <body>
 
         <div id="container" class="effect aside-float aside-bright mainnav-lg">
         
@@ -36,6 +33,10 @@
             @include('structure.scroll_page_nifty')
     
         </div>
+
+        <!-- Scripts -->
+        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{{ mix('js/main.js') }}" defer></script>
 
         @livewireScripts
     </body>
